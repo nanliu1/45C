@@ -1,4 +1,4 @@
-#include "String.h"
+ #include "String.h"
 
 int main()
 {
@@ -7,7 +7,6 @@ int main()
 	String thirdString(firstString);
 	String fourthString("Fourth");
 	String fifthString = String();
-
 	cout << "+: " << firstString + secondString << endl; 		
 	cout << "+=: " << (firstString += secondString) << endl;
 	cout << "indexOf(String): " << firstString.indexOf(secondString) << endl;
@@ -29,16 +28,13 @@ int main()
 	cout << "[]: "<< fifthString[1] << endl;						
 	cout << "[]: "<< fifthString[10] << endl;					
 	cout <<"!=: " << (fifthString != thirdString) << endl;		
-
 	cout << "Enter a test string: ";
 	cin >> firstString;
 	cout << firstString << endl;
-
 	cout << (firstString < secondString) << endl;
 	cout << (firstString <= thirdString) << endl;
 	cout << (firstString > fourthString) << endl;
-	cout << (firstString >= fifthString) << endl;
-
+	cout << (firstString >= fifthString) << endl;	
 	return 0;
 }
 
